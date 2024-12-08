@@ -1,19 +1,49 @@
+body{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 .main{
     background-color: black;
     color: rgb(255, 255, 255);
     height: 400px;
     width: 400px;
-    /* display: flex;
+    margin-top: 50px;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+    
+}
+.btn{
+    height: 120px;
+    width: 120px;
+    border-radius: 10px;
+    border: 2px solid rgb(68, 66, 66);
+
+    display: flex;
     justify-content: center;
     align-items: center;
-    justify-content: space-between;
-    flex-wrap: nowrap; */
-    display: grid;
-    grid-row: 2;
-    grid-column: 2;
 }
-.a, .b, .c, .d{
+.a{
     background-color: brown;
-    height: 70px;
-    width: 70px;
+}
+.b{
+    background-color: blue;
+}
+.c{
+    background-color: rgb(208, 255, 0);
+}
+.d{
+    background-color: rgb(0, 255, 34);
+}
+.flash{
+    background-color: white;
+}
+
+.rrr{
+    background-color: red;
 }
