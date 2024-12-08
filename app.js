@@ -1,3 +1,14 @@
+//add instruction how to play
+//css,font
+//refer and change some
+//add sound
+//keyboard use
+//add cursor
+//add ur details
+//add restart button for mobile
+//give glow effect
+//
+
 let gs=[];
 let us=[];
 let uc=[];
@@ -27,7 +38,7 @@ function levelup(){
     let rcolor=color[rindx];
     let rbtn=document.querySelector(`.${rcolor}`)
     gs.push(rcolor)
-    console.log(gs);
+
     
     let fl=setInterval(()=>{
         btnflash(rbtn);
