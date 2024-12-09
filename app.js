@@ -2,37 +2,45 @@
 //css,font
 //refer and change some
 //add sound
-//keyboard use
+
 //add cursor
 //add ur details
-//add restart button for mobile
+
 //give glow effect
 //
 
 let gs=[];
 let us=[];
 let uc=[];
-let lvl=[0];
 let started=false;
 let level=0;
+let highestscore=0;
 let color=["red","blue","yellow","green"]
+let start=document.getElementById("start")
 
 let h3=document.querySelector("h3");
 let body=document.querySelector("body");
 
 
-document.addEventListener("keypress",function(){
-    if(started==false){
+document.addEventListener("keypress",function(event){
+    if(started ==false && event.key=="Enter"){
         started=true;
         levelup();
     }
 });
 
+start.addEventListener("click",function(){
+    if(started==false){
+        started=true;
+        levelup();
+    }
+})
+
 
 function levelup(){
     us=[];
     level++;
-    h3.innerHTML=`Level ${level} <br\><br\>Your highest score is ${highest(lvl)}`
+    h3.innerHTML=`Level ${level} <br\><br\>Your highest score is ${highestscore}`
 
     let rindx=Math.floor(Math.random()*3);
     let rcolor=color[rindx];
@@ -81,28 +89,18 @@ function check(idx){
         }
 
     }else{
-        lvl=[];
-        lvl.push(level)
+        if(level>highestscore){
+            highestscore=level
+        }
         body.classList.add("rrr")
         setTimeout(function(){
             body.classList.remove("rrr")
         },150)
         h3.innerHTML=`Game over! Your score was ${level}<br\>
-        Please enter any key to start the game<br\><br\>
-        Your highest score is ${highest(lvl)}`
+        Please Enter key to start the game<br\><br\>
+        Your highest score is ${highestscore}`
         reset();
     }
-}
-
-
-function highest(levl){
-    let highestscore=levl[0];
-    for(let i=1;i<=levl.length-1;i++){
-        if(levl[i]>highestscore){
-            highestscore=levl[i];
-        }
-    }
-    return highestscore;
 }
 
 
@@ -111,4 +109,5 @@ function reset(){
     level=0;
     us=[];
     gs=[];
+    start.innerHTML="Restart"
 }
