@@ -15,7 +15,7 @@ let highestscore=0;
 let color=["red","blue","yellow","green"]
 let start=document.getElementById("start")
 
-let p=document.querySelector("p");
+let p=document.querySelector(".main").previousElementSibling;
 let body=document.querySelector("body");
 
 
@@ -109,9 +109,21 @@ function reset(){
     start.innerHTML="Restart"
 }
 
-alert(`        1.Press "Start" or the "Enter" key to begin the game.
-        2.Watch the flashing colors and memorize the sequence.
-        3.Click the buttons in the same order as the sequence shown.
-        4.The game ends if you make a mistake.
-        5.Each correct round adds a new color to the pattern.
-        6.Restart and try to beat your highest score!`)
+let bi=document.querySelector(".btnins")
+let inss=document.querySelector(".ins")
+let closeb=document.querySelector(".close")
+
+bi.addEventListener("click",()=>{
+    inss.classList.remove("hidden")
+    
+});
+closeb.addEventListener("click",()=>{
+    inss.classList.add("hidden")
+});
+
+
+
+
+
+
+
