@@ -5,8 +5,6 @@
 
 //add ur details
 
-//give glow effect
-//
 
 let gs=[];
 let us=[];
