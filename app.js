@@ -1,5 +1,5 @@
 //add instruction how to play
-//css,font
+
 //refer and change some
 //add sound
 
@@ -108,3 +108,10 @@ function reset(){
     gs=[];
     start.innerHTML="Restart"
 }
+
+alert(`        1.Press "Start" or the "Enter" key to begin the game.
+        2.Watch the flashing colors and memorize the sequence.
+        3.Click the buttons in the same order as the sequence shown.
+        4.The game ends if you make a mistake.
+        5.Each correct round adds a new color to the pattern.
+        6.Restart and try to beat your highest score!`)
