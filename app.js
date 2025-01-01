@@ -1,11 +1,3 @@
-//add instruction how to play
-
-//refer and change some
-//add sound
-
-//add ur details
-
-
 let gs=[];
 let us=[];
 let uc=[];
