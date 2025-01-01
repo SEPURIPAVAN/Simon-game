@@ -3,7 +3,6 @@
 //refer and change some
 //add sound
 
-//add cursor
 //add ur details
 
 //give glow effect
@@ -18,7 +17,7 @@ let highestscore=0;
 let color=["red","blue","yellow","green"]
 let start=document.getElementById("start")
 
-let h3=document.querySelector("h3");
+let p=document.querySelector("p");
 let body=document.querySelector("body");
 
 
@@ -40,7 +39,7 @@ start.addEventListener("click",function(){
 function levelup(){
     us=[];
     level++;
-    h3.innerHTML=`Level ${level} <br\><br\>Your highest score is ${highestscore}`
+    p.innerHTML=`Level ${level} <br\><br\>Your highest score is ${highestscore}`
 
     let rindx=Math.floor(Math.random()*3);
     let rcolor=color[rindx];
@@ -62,7 +61,7 @@ function btnflash(btn){
     btn.classList.add("flash");
     setTimeout(function(){
         btn.classList.remove("flash")
-    },180)
+    },200)
 }
 
 
@@ -96,7 +95,7 @@ function check(idx){
         setTimeout(function(){
             body.classList.remove("rrr")
         },150)
-        h3.innerHTML=`Game over! Your score was ${level}<br\>
+        p.innerHTML=`Game over! Your score was ${level}<br\>
         Please Enter key to start the game<br\><br\>
         Your highest score is ${highestscore}`
         reset();
