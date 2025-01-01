@@ -15,7 +15,7 @@ body{
     color: rgb(255, 255, 255);
     height: 400px;
     width: 400px;
-    margin-top: 50px;
+    margin-top: 40px;
 
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -80,7 +80,7 @@ p{
 }
 
 button{
-    margin-top: 50px;
+    margin-top: 40px;
     height: 60px;
     width: 270px;
     border-radius: 20px;
