@@ -6,7 +6,7 @@ A fun and interactive **memory-based game** where players must repeat an ever-gr
 
 ---
 
-## 📌 About the Game  
+##  About the Game  
 Simon Game is a classic memory challenge where:  
 ✅ The game starts with a single random color flashing.  
 ✅ Players must click the correct sequence to proceed.  
@@ -15,14 +15,14 @@ Simon Game is a classic memory challenge where:
 
 ---
 
-## ⚡ Technologies Used  
+##  Technologies Used  
  **HTML** – Page structure  
  **CSS** – Styling & animations  
  **JavaScript** – Game logic & interactivity  
 
 ---
 
-## 🖼️ Screenshot  
+##  Screenshot  
 
 <p align="center">
   <img src="simon.jpg" alt="Simon Game Screenshot" width="400px">
@@ -30,7 +30,7 @@ Simon Game is a classic memory challenge where:
 
 ---
 
-## 🛠️ How to Run Locally  
+##  How to Run Locally  
 
 To run the Simon Game on your local system, follow these steps:  
 
