@@ -1,4 +1,4 @@
-# 🎮 Simon Game  
+# Simon Game  
 
 A fun and interactive **memory-based game** where players must repeat an ever-growing sequence of lights. Built using **HTML, CSS, and JavaScript**.
 
@@ -8,10 +8,10 @@ A fun and interactive **memory-based game** where players must repeat an ever-gr
 
 ##  About the Game  
 Simon Game is a classic memory challenge where:  
-✅ The game starts with a single random color flashing.  
-✅ Players must click the correct sequence to proceed.  
-✅ With each correct round, the sequence grows longer!  
-✅ A wrong move resets the game.  
+-> The game starts with a single random color flashing.  
+-> Players must click the correct sequence to proceed.  
+-> With each correct round, the sequence grows longer!  
+-> A wrong move resets the game.  
 
 ---
 
