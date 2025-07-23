@@ -42,3 +42,5 @@ git clone https://link-to-project
 ```bash
 cd Simon-game 
 ```
+## Documentation
+[Click Here](https://sepuripavan.github.io/Simon-game/#/?id=features)
